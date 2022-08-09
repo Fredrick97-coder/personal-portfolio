@@ -35,12 +35,12 @@ function SideLinks() {
         ))}
       </ul>
       {/* <ReactTooltip
-              className=""
-              delayHide={1000}
-              backgroundColor="transparent"
-              textColor="gray"
-              effect="solid"
-            /> */}
+        className=""
+        delayHide={1000}
+        backgroundColor="transparent"
+        textColor="gray"
+        effect="solid"
+      /> */}
     </div>
   );
 }
