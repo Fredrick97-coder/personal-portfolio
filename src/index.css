@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 body {
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -20,6 +22,36 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.bg-nav {
+  background: linear-gradient(to right, #ff642b 0%, #331168 50%);
+  opacity: 0.9;
+}
+
+#link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff !important;
+  font-weight: 400;
+  font-family: Poppins;
+}
+
+#link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -92%;
+  width: 0%;
+  height: 3px;
+  background: #ff642b;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+
+#link:hover::before {
+  width: 100%;
 }
 
 #hero-btn:hover {
@@ -123,4 +155,8 @@ code {
 
 .card-anime:hover::after {
   right: 0;
+}
+
+.footer {
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.123);
 }

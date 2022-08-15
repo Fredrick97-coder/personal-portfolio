@@ -20,15 +20,15 @@ function About() {
     },
   ];
   return (
-    <div id="about" className="relative h-screen mt-[50px]">
-      <h3 className="absolute top-0 left-0 right-0 text-center text-[3rem] pt-10 font-bold z-[999]">
+    <div id="about" className="relative h-screen mt-[50px] overflow-x-hidden">
+      <h3 className="absolute top-0 left-0 right-0 text-center text-[3rem] pt-10 font-bold z-[600]">
         Who I am in the tech industry
       </h3>
       <div className="flex flex-row justify-center items-center gap-10">
         {about.map((item) => (
           <div
             key={item.id}
-            className={`relative h-96 w-80 bg-white p-10 mt-[10%] shadow-lg card-anime mt-64 `}
+            className={`relative h-96 w-80 bg-white p-10 mt-56 shadow-lg card-anime`}
           >
             <h1 className="text-3xl text-center font-semibold">{item.title}</h1>
             <p className="text-left pt-10">{item.text}</p>

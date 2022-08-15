@@ -4,10 +4,11 @@ import Navbar from '../component/navbar';
 import About from '../component/page/About';
 import Projects from '../component/page/Projects';
 import SideLinks from '../component/sideLinks';
+import Footer from '../component/footer';
 
 function Portfolio() {
   return (
-    <div className="h-full">
+    <div>
       <div className="h-screen" id="hero">
         <Navbar />
         <SideLinks />
@@ -15,6 +16,7 @@ function Portfolio() {
       </div>
       <About />
       <Projects />
+      <Footer />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import { HiArrowNarrowDown } from 'react-icons/hi';
 
 function Hero() {
   return (
-    <div className="flex justify-center items-center mx-5 gap-40">
+    <div className=" relative flex justify-center items-center mt-[4rem] mx-5 gap-40 overflow-x-hidden">
       {/* left side */}
       <div>
         <span className="text-2xl py-16 text-[#AC909E]">
