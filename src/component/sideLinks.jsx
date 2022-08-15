@@ -5,7 +5,7 @@ import ReactTooltip from 'react-tooltip';
 
 function SideLinks() {
   return (
-    <div className="fixed right-0">
+    <div className="fixed right-0 z-50">
       <ul className="">
         {sideLinks?.map((link) => (
           <li

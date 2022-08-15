@@ -4,9 +4,7 @@ import Portfolio from './pages/portfolio';
 function App() {
   return (
     <Router>
-      <div className="h-screen bg-white">
-        <Portfolio />
-      </div>
+      <Portfolio />
     </Router>
   );
 }

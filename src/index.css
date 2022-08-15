@@ -9,9 +9,118 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background: url('./assets/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  /* background: #012432; */
+  /* background: #331168; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#hero-btn:hover {
+  background-color: #f5f5f5;
+  transition: background-color 0.5s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.123);
+}
+
+/* #hero-btn:hover ~ #hero-btn > .pl-3 {
+  color: red;
+} */
+
+#hero-arrow-icon {
+  animation: arrow-spin infinite 1s linear;
+}
+
+@keyframes arrow-spin {
+  from {
+    transform: rotate(0deg);
+    color: #ff642b;
+  }
+  to {
+    transform: rotate(360deg);
+    color: white;
+  }
+}
+
+.img-bg {
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-right: 300px solid transparent;
+  border-top: 300px solid #ff642b;
+  border-left: 300px solid #ff642b;
+  border-bottom: 300px solid #ff642b;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+#img-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 0;
+  transform: translate(38%, 40%) rotate(-90deg);
+  border-right: 180px solid transparent;
+  border-top: 180px solid #fff;
+  border-left: 180px solid #fff;
+  border-bottom: 180px solid #ff642b;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  border-radius: 50%;
+  z-index: 99;
+}
+
+#about h3 {
+  font-family: Brittany Signature;
+  text-shadow: 0px 0px 10px rgba(233, 30, 30, 0.712);
+}
+
+.about-wrapper {
+}
+
+.card-anime:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease-in-out;
+}
+
+.card-anime::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  right: 0;
+  border-top: 2px solid #ff642b;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-anime:hover::before {
+  left: 0;
+}
+
+.card-anime::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  border-bottom: 2px solid #ff642b;
+  background-color: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-anime:hover::after {
+  right: 0;
 }

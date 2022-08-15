@@ -1,6 +1,6 @@
 import React from 'react';
 import { navLinks } from '../models/data';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function Navbar() {
   return (
@@ -9,7 +9,9 @@ function Navbar() {
         <div key={link.id}>
           <ul>
             <li className="px-5 font-poppins hover:text-gray-400">
-              <Link to={link.path}>{link.name}</Link>
+              <HashLink smooth to={`${link.path}`}>
+                {link.name}
+              </HashLink>
             </li>
           </ul>
         </div>
