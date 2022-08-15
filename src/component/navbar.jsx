@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 function Navbar() {
   return (
     <div
-      className="fixed top-0 left-0 right-0 z-[999] bg-nav flex items-center justify-center h-16  w-full shadow-lg over"
+      className="fixed top-0 left-0 right-0 z-[999] bg-nav flex items-center justify-center h-16   shadow-lg "
       id=""
     >
       {navLinks.map((link) => (

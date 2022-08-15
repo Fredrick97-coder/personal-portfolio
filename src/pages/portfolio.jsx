@@ -9,7 +9,7 @@ import Footer from '../component/footer';
 function Portfolio() {
   return (
     <div>
-      <div className="h-screen" id="hero">
+      <div id="hero">
         <Navbar />
         <SideLinks />
         <Hero />
